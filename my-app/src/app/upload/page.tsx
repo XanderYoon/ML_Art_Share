@@ -1,8 +1,7 @@
 export default function Page() {
     return (
         <div>
-            <h1>This is the model demo page!</h1>
+            <h1>This is the upload page!</h1>
         </div>
-    
     )
-  }
+}

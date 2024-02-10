@@ -5,3 +5,7 @@ const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS
 const supabase = createClient(supabaseUrl, supabaseKey)
 const STORAGE_BUCKET = '' // your storage bucket name
 const BEARER_TOKEN = '' // your bearer token
+
+export interface Bucket {
+    
+}
