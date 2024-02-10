@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Link from 'next/link';
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -18,5 +19,17 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>{children}</body>
     </html>
+  );
+}
+
+const HomePage: React.FC = () => {
+  return (
+    <div>
+      <h1>Welcome to the Home Page</h1>
+      {/* Link to MonaLisaShares page */}
+      <Link href="/MonaLisaShares">
+        <a>Go to Mona Lisa Shares Page</a>
+      </Link>
+    </div>
   );
 }
