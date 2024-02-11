@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "catboost_info",
+			"path": "../../../../../../../Downloads/Model Files/catboost_info"
+		},
+		{
+			"name": "ArtShare",
+			"path": "../../../.."
+		}
+	],
+	"settings": {}
+}
