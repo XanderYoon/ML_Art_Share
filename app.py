@@ -39,7 +39,7 @@ def predict():
 
 
     # Pass the prediction result to the template
-    return render_template('regression.html', prediction=prediction)
+    return render_template('ArtShare/my-app/src/app/upload/page.tsx', prediction=prediction)
 
 def predict_price(yearCreation, period, movement, is_signed, dated, right, left, excellent, direct_from_publisher, frame_abrasion, original_condition, very_good, not_examined, tears, occasional_marks, oxidation, scratches):
     synthetic_data = {
