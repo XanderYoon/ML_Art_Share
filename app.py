@@ -12,53 +12,33 @@ model.load_model('catboost_model.cbm')
 def predict():
     prediction = None  # Initialize prediction variable
     if request.method == 'POST':
-        # Extract data from form
-        yearCreation = request.form.get('yearCreation')
-        period = request.form.get('period')
-        movement = request.form.get('movement')
-        is_signed = request.form.get('is_signed')
-        dated = request.form.get('dated')
-        right = request.form.get('right')
-        left = request.form.get('left')
-        excellent = request.form.get('excellent')
-        direct_from_publisher = request.form.get('direct_from_publisher')
-        frame_abrasion = request.form.get('frame_abrasion')
-        original_condition = request.form.get('original_condition')
-        very_good = request.form.get('very_good')
-        not_examined = request.form.get('not_examined')
-        tears = request.form.get('tears')
-        occasional_marks = request.form.get('occasional_marks')
-        oxidation = request.form.get('oxidation')
-        scratches = request.form.get('scratches')
+        yearCreation = int(request.form.get('yearCreation', 0))
+        period = request.form.get('period', '')
+        movement = request.form.get('movement', '')
+        is_signed = int(request.form.get('is_signed', '0'))
+        dated = int(request.form.get('dated', '0'))
+        right = int(request.form.get('right', '0'))
+        left = int(request.form.get('left', '0'))
+        excellent = int(request.form.get('excellent', '0'))
+        direct_from_publisher = int(request.form.get('direct_from_publisher', '0'))
+        frame_abrasion = int(request.form.get('frame_abrasion', '0'))
+        original_condition = int(request.form.get('original_condition', '0'))
+        very_good = int(request.form.get('very_good', '0'))
+        not_examined = int(request.form.get('not_examined', '0'))
+        tears = int(request.form.get('tears', '0'))
+        occasional_marks = int(request.form.get('occasional_marks', '0'))
+        oxidation = int(request.form.get('oxidation', '0'))
+        scratches = int(request.form.get('scratches', '0'))
 
-        # Convert strings to appropriate types
-        try:
-            yearCreation = int(yearCreation)
-            is_signed = int(is_signed)
-            dated = int(dated)
-            right = int(right)
-            left = int(left)
-            excellent = int(excellent)
-            direct_from_publisher = int(direct_from_publisher)
-            frame_abrasion = int(frame_abrasion)
-            original_condition = int(original_condition)
-            very_good = int(very_good)
-            not_examined = int(not_examined)
-            tears = int(tears)
-            occasional_marks = int(occasional_marks)
-            oxidation = int(oxidation)
-            scratches = int(scratches)
-        except ValueError:
-            return "Error: Please ensure all fields are filled out correctly."
-
-        # Predict price
+        # Prepare data for prediction
         predicted_price = predict_price(yearCreation, period, movement, is_signed, dated, right, left, excellent, direct_from_publisher, frame_abrasion, original_condition, very_good, not_examined, tears, occasional_marks, oxidation, scratches)
-        predicted_price_value = float(predicted_price[0])
-        
-        # Instead of returning it directly, pass it to the template
-        prediction = predicted_price_value
+        prediction = int(predicted_price[0])
+        prediction1 = max(round(predicted_price[0] - 10000, -4), 0)
+        prediction2 = max(round(predicted_price[0] + 10000, -4), 0)
 
-    # Always return the template, with prediction variable
+
+
+    # Pass the prediction result to the template
     return render_template('regression.html', prediction=prediction)
 
 def predict_price(yearCreation, period, movement, is_signed, dated, right, left, excellent, direct_from_publisher, frame_abrasion, original_condition, very_good, not_examined, tears, occasional_marks, oxidation, scratches):
@@ -84,6 +64,7 @@ def predict_price(yearCreation, period, movement, is_signed, dated, right, left,
     df_synthetic = pd.DataFrame([synthetic_data])
     predicted_price = model.predict(df_synthetic)
     return predicted_price
+    
 
 if __name__ == '__main__':
     app.run(debug=True)

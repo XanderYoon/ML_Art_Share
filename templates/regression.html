@@ -1,35 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Predict Artwork Price</title>
-</head>
 <body>
-    <h2>Predict Artwork Price</h2>
+    <h2>Enter Artwork Details</h2>
     <form method="post">
-        Year of Creation: <input type="number" name="yearCreation" required><br>
-        Period: <input type="text" name="period" required><br>
-        Movement: <input type="text" name="movement" required><br>
-        Is Signed (0 or 1): <input type="number" name="is_signed" required><br>
-        Dated (0 or 1): <input type="number" name="dated" required><br>
-        Right (0 or 1): <input type="number" name="right" required><br>
-        Left (0 or 1): <input type="number" name="left" required><br>
-        Excellent (0 or 1): <input type="number" name="excellent" required><br>
-        Direct from Publisher (0 or 1): <input type="number" name="direct_from_publisher" required><br>
-        Frame Abrasion (0 or 1): <input type="number" name="frame_abrasion" required><br>
-        Original Condition (0 or 1): <input type="number" name="original_condition" required><br>
-        Very Good (0 or 1): <input type="number" name="very_good" required><br>
-        Not Examined (0 or 1): <input type="number" name="not_examined" required><br>
-        Tears (0 or 1): <input type="number" name="tears" required><br>
-        Occasional Marks (0 or 1): <input type="number" name="occasional_marks" required><br>
-        Oxidation (0 or 1): <input type="number" name="oxidation" required><br>
-        Scratches (0 or 1): <input type="number" name="scratches" required><br>
+        Year of Creation: <input type="number" name="yearCreation" placeholder="Year of Creation"><br>
+        Period: <input type="text" name="period" placeholder="Period"><br>
+        Movement: <input type="text" name="movement" placeholder="Movement"><br>
+
+        <!-- Is Signed -->
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="is_signed" value="1"> Is Signed</label>
+        </div>
+
+        <!-- Dated -->
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="dated" value="1"> Dated</label>
+        </div>
+
+        <!-- Right -->
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="right" value="1"> Right</label>
+        </div>
+
+        <!-- Left -->
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="left" value="1"> Left</label>
+        </div>
+
+        <!-- Excellent Condition -->
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="excellent" value="1"> Excellent Condition</label>
+        </div>
+
+        <!-- Direct from Publisher -->
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="direct_from_publisher" value="1"> Direct from Publisher</label>
+        </div>
+
+        <!-- Frame Abrasion -->
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="frame_abrasion" value="1"> Frame Abrasion</label>
+        </div>
+
+        <!-- Original Condition -->
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="original_condition" value="1"> Original Condition</label>
+        </div>
+
+        <!-- Very Good -->
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="very_good" value="1"> Very Good</label>
+        </div>
+
+        <!-- Not Examined -->
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="not_examined" value="1"> Not Examined</label>
+        </div>
+
+        <!-- Tears -->
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="tears" value="1"> Tears</label>
+        </div>
+
+        <!-- Occasional Marks -->
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="occasional_marks" value="1"> Occasional Marks</label>
+        </div>
+
+        <!-- Oxidation -->
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="oxidation" value="1"> Oxidation</label>
+        </div>
+
+        <!-- Scratches -->
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="scratches" value="1"> Scratches</label>
+        </div>
+
         <input type="submit" value="Predict Price">
     </form>
 
-    {% if prediction != '' %}
-        <h3>Predicted Price: {{ prediction }}</h3>
+    {% if prediction %}
+    {% set lower_bound = (prediction - 1000) // 1000 * 1000 %}
+    {% if lower_bound < 0 %}
+        {% set lower_bound = 0 %}
     {% endif %}
+    {% set upper_bound = (prediction + 1000) // 1000 * 1000 %}
+    {% set formatted_lower_bound = lower_bound // 100 %}
+    {% set formatted_upper_bound = upper_bound // 100 %}
+    <h3>Predicted Price: {{ formatted_lower_bound }}-{{ formatted_upper_bound }}k</h3>
+    {% endif %}
+
 </body>
-</html>
