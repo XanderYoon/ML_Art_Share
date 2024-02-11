@@ -1,34 +1,22 @@
 export default function Home() {
   return (
-    <div className="flex flex-col items-center pt-16">
-      <div className="flex flex-col lg:flex-row items-center gap-8 p-8 max-w-6xl w-full">
-        <div className="flex flex-col space-y-4 lg:w-1/2 w-full">
+    <div className="flex w-full h-screen"> {/* Adjusted for full viewport height */}
+      <div className="w-1/2 flex flex-col justify-center items-center text-center p-8 space-y-4 overflow-auto">
+        <h1 className="text-6xl font-bold text-white">
+          Invest in your favorite art.
+        </h1>
+        <p className="text-gray-300 text-xl">
+          ArtShare allows you to invest in your favorite art pieces, including those you've seen in museums. We offer innovative fractional ownership of art pieces, enabling affordable investments in art.
+        </p>
+      </div>
 
-          <h1 className="text-5xl font-bold">
-            Welcome to Art Share!
-          </h1>
-
-          <p className="text-purple-200 text-lg">
-            A creative art valuation solution for your convenience.
-            Invest in your favorite works and submit your own for valuation.
-          </p>
-          
-        </div>
-        
-        <div className="lg:w-1/2 w-full mt-8 lg:mt-0">
-          <img
-            src='/thekiss.png'
-            alt=""
-            className="rounded-lg object-cover w-full h-full"
-          />
-        </div>
-        <div className="lg:w-1/2 w-full mt-8 lg:mt-0">
+      {/* Image section with 100% viewport height */}
+      <div className="w-1/2 h-screen mt-[-62px]"> {/* Adjusted margin-top */}
         <img
-            src='/monalisa.png'
-            alt=""
-            className="rounded-lg object-cover w-full h-full"
-          />
-        </div>
+          src='/money.png'
+          alt="The Kiss"
+          className="h-full w-full object-cover"
+        />
       </div>
     </div>
   )

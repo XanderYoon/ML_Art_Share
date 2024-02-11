@@ -1,27 +1,26 @@
 'use client'
 import { useRouter } from 'next/navigation'
 
-export default async function() {
+export default async function Header() {
     const router = useRouter()
-    return(
-        <div className="flex w-full px-4 lg:px-40 py-4 items-center border-b text-center gap-8 justify-between">
-            <div className="flex gap-2 h-full">
-                <button type="button" onClick={() => router.push('/')}>Art Share</button>
+    return (
+        <div className="flex w-full px-4 lg:px-40 py-4 items-center border-b text-center justify-between">
+            {/* Navigation buttons */}
+            <div className="flex gap-4 items-center">
+                <button type="button" onClick={() => router.push('/')} className="font-bold text-xl">pArt</button>
+                <button type="button" onClick={() => router.push('/market')} className="font-bold text-lg">Market</button>
+                <button type="button" onClick={() => router.push('/model')} className="font-bold text-lg">Analysis</button>
+                <button type="button" onClick={() => router.push('/upload')} className="font-bold text-lg">Upload</button>
             </div>
 
-            <div className="flex gap-2 h-full"></div>
-            <div className="flex gap-2 h-full"></div>
-
-            <div className="flex gap-2 h-full">
-                <button type="button" onClick={() => router.push('/market')}>Market</button>
-            </div>
-
-            <div className="flex gap-2 h-full">
-                <button type="button" onClick={() => router.push('/model')}>Analysis</button>
-            </div>
-
-            <div className="flex gap-2 h-full">
-                <button type="button" onClick={() => router.push('/upload')}>Upload</button>
+            {/* Search bar */}
+            <div className="flex h-full items-center">
+                <input
+                    type="text"
+                    placeholder="Search..."
+                    disabled
+                    className="placeholder:italic placeholder-text-slate-400 block bg-white border border-slate-300 rounded-md py-2 pl-3 pr-9 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+                />
             </div>
         </div>
     )
