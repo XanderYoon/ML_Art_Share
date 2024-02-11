@@ -8,6 +8,15 @@ export default function Home() {
         <p className="text-gray-300 text-xl">
           ArtShare allows you to invest in your favorite art pieces, including those you've seen in museums. We offer innovative fractional ownership of art pieces, enabling affordable investments in art.
         </p>
+        <div style={{ height: '20px' }}></div>
+        {/* Logo and subtext container */}
+        <div className="flex flex-col items-center space-y-2">
+          <img
+            src='/logo.svg'
+            alt="ArtShare Logo"
+            className="w-[100px] h-auto" // Set width to 100px and auto height for aspect ratio
+          />
+        </div>
       </div>
 
       {/* Image section with 100% viewport height */}

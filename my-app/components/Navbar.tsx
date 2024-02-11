@@ -8,9 +8,9 @@ export default async function Header() {
             {/* Navigation buttons */}
             <div className="flex gap-4 items-center">
                 <button type="button" onClick={() => router.push('/')} className="font-bold text-xl">pArt</button>
-                <button type="button" onClick={() => router.push('/market')} className="font-bold text-lg">Market</button>
-                <button type="button" onClick={() => router.push('/model')} className="font-bold text-lg">Analysis</button>
-                <button type="button" onClick={() => router.push('/upload')} className="font-bold text-lg">Upload</button>
+                <button type="button" onClick={() => router.push('/market')} className="font-bold text-lg">Marketplace</button>
+                <button type="button" onClick={() => router.push('/model')} className="font-bold text-lg">Buy</button>
+                <button type="button" onClick={() => router.push('/upload')} className="font-bold text-lg">Analyze</button>
             </div>
 
             {/* Search bar */}

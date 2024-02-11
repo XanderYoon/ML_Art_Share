@@ -18,7 +18,7 @@ export default async function Page() {
             <h1 className="text-6xl font-bold text-white font-inter"> Find new art.</h1>
 
             <div className="flex flex-col lg:flex-row items-center gap-8 p-8">
-                <Image width={1300} alt="market" src="/market.png"/>
+                <Image width={900} alt="market" src="/market.png"/>
             </div>
         </div>
     )

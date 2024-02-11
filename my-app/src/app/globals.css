@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,6 +19,70 @@
   }
 } */
 
+
+
+/* Apply the Inter font family to form-check-label */
+.form-check-label {
+  color: #FFFFFF; /* This sets the text color to white */
+  font-family: 'Inter', sans-serif; /* This sets the font to Inter */
+}
+
+
+
+/* Hide default checkbox */
+.form-check-input {
+  display: none;
+}
+
+/* Custom checkbox styling */
+.form-check-input + label::before {
+  content: '';
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 2px solid #007bff; /* Bootstrap primary color for reference */
+  border-radius: 4px;
+}
+
+/* Style when checked */
+.form-check-input:checked + label::before {
+  background-color: #007bff;
+}
+
+/* Optional: Icon or checkmark when checked */
+.form-check-input:checked + label::after {
+  content: '✓';
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  color: white;
+  font-size: 16px;
+}
+
+
+/* Apply Inter font to all elements within .form-control */
+.form-control, .form-control * {
+  font-family: 'Inter', sans-serif;
+}
+
+
+/* Enhanced checkbox design */
+.form-check-input + label::before {
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+/* Hover effect */
+.form-check-input:hover + label::before {
+  border-color: #0056b3; /* Darker shade for hover state */
+}
+
+/* Focus indicator for accessibility */
+.form-check-input:focus + label::before {
+  box-shadow: 0 0 0 2px rgba(0,123,255,.25);
+}
 
 
 
