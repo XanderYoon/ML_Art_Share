@@ -9,7 +9,7 @@ markets faltered, the art market exhibited resilience and even
 appreciation. Art offers not only financial gains but also serves as a
 hedge against market volatility and economic uncertainties.
 
-![](readme_images/image.png){#fig:enter-label width="0.5\\linewidth"}
+![](image.png){#fig:enter-label width="0.5\\linewidth"}
 
 # Summary
 
@@ -20,7 +20,7 @@ barriers and making art investment accessible to a wider audience. This
 fosters inclusivity and expands opportunities for cultural appreciation
 and financial growth.
 
-![Enter Caption](readme_images/image2.png){#fig:enter-label width="0.5\\linewidth"}
+![Enter Caption](image2.png){#fig:enter-label width="0.5\\linewidth"}
 
 The platform will feature a curated selection of artworks for users to
 invest in, along with comprehensive historical auction pricing data and
@@ -189,7 +189,7 @@ valuation of an art piece. This approach empowers us to better
 understand market sentiment dynamics and make strategic decisions
 regarding art investment and valuation.
 
-![image](readme_images/NLTKResults.png){width="1\\linewidth"}
+![image](NLTKResults.png){width="1\\linewidth"}
 
 # Historical Price Visualization
 
@@ -199,7 +199,7 @@ Additionally, we applied polynomial regression forecasting to illustrate
 the data trend. We opted for this approach due to the wide deviations in
 data points, which is typical in investment valuations.
 
-![image](readme_images/VermeerHistoryGraph.pdf){width="1\\linewidth"}
+![image](VermeerHistoryGraph.pdf){width="1\\linewidth"}
 
 To enhance visual representation, we aimed for an aesthetic reminiscent
 of the Dow Jones index, aiming to emphasize the idea that art
