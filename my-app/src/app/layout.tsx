@@ -21,15 +21,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-const HomePage: React.FC = () => {
-  return (
-    <div>
-      <h1>Welcome to the Home Page</h1>
-      {/* Link to MonaLisaShares page */}
-      <Link href="/MonaLisaShares">
-        <a>Go to Mona Lisa Shares Page</a>
-      </Link>
-    </div>
-  );
-}
