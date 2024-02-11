@@ -17,8 +17,7 @@ export default async function Page() {
     return (
 
         <div>
-            <Image width={600} alt="graph of data" src="/vermeergraph.png"/>
-            <h1>This is the model demo page!</h1>
+            <h1>This is the market page!</h1>
         </div>
     
     )

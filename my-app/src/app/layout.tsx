@@ -21,7 +21,7 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
             <Navbar></Navbar>
           </Suspense>
         </section>
-        <main className="flex flex-1 flex-col items-center py-16">
+        <main className="flex flex-1 flex-col items-center py-16 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
           {children}
           </main>
         </body>
