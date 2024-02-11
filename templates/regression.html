@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Artwork Price</title>
+</head>
+<body>
+    <h2>Predict Artwork Price</h2>
+    <form method="post">
+        Year of Creation: <input type="number" name="yearCreation" required><br>
+        Period: <input type="text" name="period" required><br>
+        Movement: <input type="text" name="movement" required><br>
+        Is Signed (0 or 1): <input type="number" name="is_signed" required><br>
+        Dated (0 or 1): <input type="number" name="dated" required><br>
+        Right (0 or 1): <input type="number" name="right" required><br>
+        Left (0 or 1): <input type="number" name="left" required><br>
+        Excellent (0 or 1): <input type="number" name="excellent" required><br>
+        Direct from Publisher (0 or 1): <input type="number" name="direct_from_publisher" required><br>
+        Frame Abrasion (0 or 1): <input type="number" name="frame_abrasion" required><br>
+        Original Condition (0 or 1): <input type="number" name="original_condition" required><br>
+        Very Good (0 or 1): <input type="number" name="very_good" required><br>
+        Not Examined (0 or 1): <input type="number" name="not_examined" required><br>
+        Tears (0 or 1): <input type="number" name="tears" required><br>
+        Occasional Marks (0 or 1): <input type="number" name="occasional_marks" required><br>
+        Oxidation (0 or 1): <input type="number" name="oxidation" required><br>
+        Scratches (0 or 1): <input type="number" name="scratches" required><br>
+        <input type="submit" value="Predict Price">
+    </form>
+
+    {% if prediction != '' %}
+        <h3>Predicted Price: {{ prediction }}</h3>
+    {% endif %}
+</body>
+</html>
