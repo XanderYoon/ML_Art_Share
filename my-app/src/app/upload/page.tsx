@@ -69,8 +69,6 @@ export default function Page() {
                         <label className="form-check-label" htmlFor="left">Signed Left</label>
                     </div>
 
-                   
-
                     {/* Direct from Publisher */}
                     <div className="form-check form-check-inline">
                         <input className="form-check-input" type="checkbox" name="direct_from_publisher" id="direct_from_publisher" value="1" />
