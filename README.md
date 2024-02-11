@@ -199,7 +199,7 @@ Additionally, we applied polynomial regression forecasting to illustrate
 the data trend. We opted for this approach due to the wide deviations in
 data points, which is typical in investment valuations.
 
-![image](VermeerHistoryGraph.pdf){width="1\\linewidth"}
+![image](VermeerHistory.jpg){width="1\\linewidth"}
 
 To enhance visual representation, we aimed for an aesthetic reminiscent
 of the Dow Jones index, aiming to emphasize the idea that art
