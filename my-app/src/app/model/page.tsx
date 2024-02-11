@@ -15,11 +15,16 @@ async function getData() {
 export default async function Page() {
     // const data = await getData();
     return (
+        <div className="flex flex-col items-center">
+            <h1 className="text-3xl"> View historical and projected value </h1>
 
-        <div>
+            <div className="flex flex-col items-center pt-16">
             <Image width={600} alt="graph of data" src="/vermeergraph.png"/>
-            <h1>This is the model demo page!</h1>
+            </div>
+
+            <div className="flex flex-col items-center pt-16">
+            <Image width={500} alt="pearlgirl" src="/pearlgirl.png"/>
+            </div>
         </div>
-    
     )
   }

@@ -1,7 +1,10 @@
 export default function Page() {
     return (
-        <div>
-            <h1>This is the upload page!</h1>
+        <div className="flex flex-col items-center pt-16">
+            <h1 className="text-3xl">Upload Your Art Data Here</h1>
+            
+        
+
         </div>
     )
 }
