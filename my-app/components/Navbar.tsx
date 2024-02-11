@@ -7,7 +7,7 @@ export default async function Header() {
         <div className="flex w-full px-4 lg:px-40 py-4 items-center border-b text-center justify-between">
             {/* Navigation buttons */}
             <div className="flex gap-4 items-center">
-                <button type="button" onClick={() => router.push('/')} className="font-bold text-xl">pArt</button>
+                <button type="button" onClick={() => router.push('/')} className="font-bold text-xl" style={{ color: '#9b59b6' }}>pArt</button>
                 <button type="button" onClick={() => router.push('/market')} className="font-bold text-lg">Marketplace</button>
                 <button type="button" onClick={() => router.push('/model')} className="font-bold text-lg">Buy</button>
                 <button type="button" onClick={() => router.push('/upload')} className="font-bold text-lg">Analyze</button>
