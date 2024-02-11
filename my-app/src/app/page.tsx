@@ -14,6 +14,21 @@ export default function Home() {
           </p>
           
         </div>
+        
+        <div className="lg:w-1/2 w-full mt-8 lg:mt-0">
+          <img
+            src='/thekiss.png'
+            alt=""
+            className="rounded-lg object-cover w-full h-full"
+          />
+        </div>
+        <div className="lg:w-1/2 w-full mt-8 lg:mt-0">
+        <img
+            src='/monalisa.png'
+            alt=""
+            className="rounded-lg object-cover w-full h-full"
+          />
+        </div>
       </div>
     </div>
   )
