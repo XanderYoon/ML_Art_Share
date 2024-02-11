@@ -233,3 +233,29 @@ displayed, for a set period before profit distribution among
 shareholders upon sale, akin to a bond.
 
 # References
+- Ali, M. (2023, March 23). NLTK sentiment analysis tutorial: Text mining & analysis in python. DataCamp. [Link](https://www.datacamp.com/tutorial/text-analytics-beginners-nltk)
+
+- Artprice.com. (2023, January 18). The ARTPRICE100© index of blue-chip artists up 3% over 2022 vs S&P 500 -19%. LinkedIn. [Link](https://www.linkedin.com/pulse/artprice100-index-blue-chip-artists-up-3-over-2022-vs-sp-/)
+
+- ARTPRICE100(c). (2019, July 15). The art market’s blue-chip artists yield nearly as much as the top performing companies in the American economy. Nasdaq. [Link](https://www.nasdaq.com/press-release/artprice100c:-the-art-markets-blue-chip-artists-yield-nearly-as-much-as-the-top)
+
+- Cukrowski, M. (2022, December 15). Polynomial autoregression: Improve your forecasts in 2 minutes. Medium. [Link](https://towardsdatascience.com/polynomial-autoregression-improve-your-forecasts-in-2-minutes-746d8b57d896)
+
+- (n.d.). The fractional art market keeps on expanding. penta. [Link](https://www.barrons.com/articles/the-fractional-art-market-keeps-on-expanding-86c80997)
+
+- Klein, M. E. (2021, August 3). Art valuation in disruptive times: Winston Art Group | Navigating the Art World. [Link](https://winstonartgroup.com/news_articles/art-valuation-in-disruptive-times/)
+
+- Kuznetsov, N. (n.d.). Fractional art is creating a new investor class. Nasdaq. [Link](https://www.nasdaq.com/articles/fractional-art-is-creating-a-new-investor-class)
+
+- Ma, Y. (2020, February 5). NLP: How does nltk.vader calculate sentiment? Medium. [Link](https://medium.com/@mystery0116/nlp-how-does-nltk-vader-calculate-sentiment-6c32d0f5046b)
+
+- MoMAA. (2024, January 22). Art appraisal guide 2024: 7 key insights for accurate valuations. [Link](https://momaa.org/art-appraisal-guide-2024-7-key-insights-for-accurate-valuations/)
+
+- Nair, D. (n.d.). Why investors are turning to art during the pandemic. The National. [Link](https://www.thenationalnews.com/business/money/why-investors-are-turning-to-art-during-the-pandemic-1.1192090)
+
+- Sulley, S. (2022, November 8). Council post: The remarkable resilience of contemporary art as an investment. Forbes. [Link](https://www.forbes.com/sites/forbesbusinesscouncil/2022/09/28/the-remarkable-resilience-of-contemporary-art-as-an-investment/)
+
+- (n.d.). Tutorial: Building A text classification system. Tutorial: Building a Text Classification System - TextBlob 0.16.0 documentation. [Link](https://textblob.readthedocs.io/en/dev/classifiers.html)
+
+- Velimirović, A. (n.d.). Behind closed doors - the meaning of a private auction of art. Widewalls. [Link](https://www.widewalls.ch/magazine/private-auction-art)
+
