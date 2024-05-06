@@ -1,5 +1,5 @@
 # Demo Video
-[![Watch the video](https://img.youtube.com/vi/<fGnyZbtjA_8>/maxresdefault.jpg)(https://youtu.be/fGnyZbtjA_8)
+[![Watch the video](https://img.youtube.com/vi/<fGnyZbtjA_8>/maxresdefault.jpg)](https://youtu.be/fGnyZbtjA_8)
 
 # Background
 
