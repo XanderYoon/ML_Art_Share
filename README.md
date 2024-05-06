@@ -1,6 +1,5 @@
 # Demo Video
-[![Watch the video](<img width="1246" alt="Screenshot 2024-05-06 at 12 56 17 PM" src="https://github.com/XanderYoon/ML-Art-Share/assets/146145881/1d8ecf49-2dd0-4550-8d96-3babcdcd7daf">
-)(https://drive.google.com/file/d/1rOQ7P5Bv48fLmiJlsnUcnTHgUYdZWSoe/view?usp=sharing)
+[![Watch the video](https://img.youtube.com/vi/<fGnyZbtjA_8>/maxresdefault.jpg)(https://youtu.be/fGnyZbtjA_8)
 
 # Background
 
