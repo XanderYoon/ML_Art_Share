@@ -1,5 +1,5 @@
 # Demo Video
-[![Watch the video](https://i.stack.imgur.com/Vp2cE.png)](https://drive.google.com/file/d/1rOQ7P5Bv48fLmiJlsnUcnTHgUYdZWSoe/view?usp=sharing)
+[![Watch the video](https://drive.google.com/file/d/1rOQ7P5Bv48fLmiJlsnUcnTHgUYdZWSoe/view?usp=sharing)
 
 # Background
 
